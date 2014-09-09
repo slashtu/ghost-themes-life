@@ -774,12 +774,12 @@ $(window).bind('popstate', function(event) {
 //alert(window.location.pathname);
 
         // when reload, always back to home
-        if ( true ||window.location.pathname == '/life/' && !window.location.hash) {
+        if ( window.location.pathname == '/life/' && !window.location.hash) {
             displayHome();
         } else if (window.location.hash) {
 //            alert('hash');
-            if (window.location.hash == '/life/#/blog') {
-                alert('blog');
+            if ( true || window.location.hash == '/life/#/blog') {
+//                alert('blog');
                 lnkPushState("/life/#/blog");
                 displayBlog();
             }

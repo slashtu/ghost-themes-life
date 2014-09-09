@@ -304,6 +304,7 @@ function processCategoryRow(row, layout) {
 }
 
 function parsePortfolioList(data, callback) {
+    console.log(data);
     var $response = $(data).find('.cr-page-content');
     if ($response.length === 0) {
         alert('404, static page was not found');

@@ -788,7 +788,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .cr-header-desc-nl {
-    position: absolute;
+    position: relative;
     bottom: -4px;
 }
 
@@ -801,7 +801,10 @@ margin on the iframe, cause it breaks stuff. */
   margin: 0;
   list-style-type: none;
   list-style-position: inside;
-  padding-top: 14px;
+  /*padding-top: 14px;*/
+  position: relative;
+  bottom: -55px;
+  font-weight: bold;
 }
 
 .cr-header-nav li {
@@ -1010,7 +1013,17 @@ margin on the iframe, cause it breaks stuff. */
         margin-right: 10px;
         margin-left: 0px;
     }
-    
+
+    .cr-header-nav {
+        display: inline-block;
+        margin: 0;
+        list-style-type: none;
+        list-style-position: inside;
+        /*padding-top: 14px;*/
+        position: relative;
+        bottom: -34px;
+        font-weight: bold;
+    }
 
 }
 /* medium displays */
@@ -1046,6 +1059,17 @@ margin on the iframe, cause it breaks stuff. */
         margin-left: 10px;
     }
 
+    .cr-header-nav {
+        display: inline-block;
+        margin: 0;
+        list-style-type: none;
+        list-style-position: inside;
+        /*padding-top: 14px;*/
+        position: relative;
+        bottom: -55px;
+        font-weight: bold;
+    }
+
 }
 /* large displays */
 @media only screen and (min-width: 64.063em) {
@@ -1061,7 +1085,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .cr-header-desc-nl {
-        position: absolute;
+        position: relative;
         bottom: -4px;
     }
 
